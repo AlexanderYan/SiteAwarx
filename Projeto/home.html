@@ -1,228 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<html>
 
-body{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    overflow-x: hidden;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>Lex Corp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
+<body>
+   <header>
+    <div class="header">
+        <div class="logo">
+            <img class="logo" src="assets/images/logo.jpg">
+        </div>
+        <div class="menu">
+          <nav>
+              <ul>
+                  <li class="active"><a href="">Home</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Our Projects</a></li>
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">Happy Clients</a></li>
+                  <li><a href="">Price</a></li>
+                  <li><a href="">Some Facts</a></li>
+                  <li><a href="">Contact Us</a></li>
+              </ul>
+          </nav>
+        </div>
+    </div>
+   </header> 
+   <main>
+    <section class="banner">
+        <div class="sliders">
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Design is about </br> <span>communication</span></h1>
+                    <h2>Ligue 999003580</h2>
+                    <a href=""class="button">GET IN</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Design is about </br> <span>communication</span></h1>
+                    <h2>Ligue 999003580</h2>
+                    <a href="" class="button">GET IN</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slidearea">
+                    <h1>Design is about </br> <span>communication</span></h1>
+                    <h2>Ligue 999003580</h2>
+                    <a href=""class="button">GET IN</a>
+                </div>
+            </div>
+        </div>
+        <div class="pointers">
+            <div class="point active">
+                ...
+            </div>
+            <div class="point">
+                ...
+            </div>
+            <div class="point">
+                ...
+            </div>
+        </div>
+    </section>
+    <section class="default light">
+        <div class="section-title">About us</div>
+        <div class="section-desc">Who we are?</div>
+        <div class="section-body">
+           <div class="section-aboutus">
+                <div class="section-aboutus--left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus turpis elit, a mattis metus tincidunt nec. Etiam lacinia non orci commodo vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas eu urna id sapien malesuada iaculis non nec dolor. Etiam eu consequat justo. Praesent non vulputate lacus. Nulla ut urna dapibus, sagittis dui eu, mollis mauris. Aliquam pellentesque tellus bibendum, aliquet eros a, pellentesque orci.</p>
+                    <a href="" class="button">Clique aqui</a>
+                </div>
+                <div class="section-aboutus--rigth">
+                    <img src="../Projeto/media/foto9.jpg"/>
+                </div>
+           </div>
+        </div>
+    </section>
 
-.button{
-    display: inline-block;
-    background-color: green;
-    color: white;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-header{
-    height: 100px;
-    background-color: black;
-    color: white;
-}
-
-.header{
-    max-width: 1140px;
-    height: 100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-
-.logo{
-    width: 100px;
-}
-
-.menu{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.logo{
-    width: 80px;
-    height: 80px;
-}
-
-.menu ul,
-.menu li {
-    list-style: none;
-}
-
-.menu ul{
-    display: flex;
-}
-
-.menu li a {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-decoration: none;
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    border-bottom: 5px solid black;
-}
-
-.menu li a:hover{
-    border-bottom: 5px solid green;
-    color:#CCC;
-}
-.menu .active a {
-    border-bottom: 5px solid green;
-    color:#CCC;
-}
-
-.banner{
-    height: calc(100vh - 100px);
-    background-color:#333;
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.banner .sliders{
-width: 1000vw;
-height: 100%;
-
-}
-
-.banner .slide{
-    width: 100vw;
-    height: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.banner .slidearea{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.banner h1{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 50px;
-}
-
-.banner span{
-    color:green;
-}
-
-.banner h2{
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-
-
-.banner .pointers{
-    width: 100vw;
-    height: 20px;
-    position: absolute;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner .point{
-    width: 15px;
-    height: 15px;
-    border: 2px solid white;
-    border-radius: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.banner .point.active{
-    background-color: green;
-}
-
-.default{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.default .section-title,
-.default .section-desc{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.default .section-title{
-    font-size: 20px;
-
-}
-
-.default .section-desc{
-    font-size: 13px;
-    color: #CCC;
-    margin-top: 10px;
-    margin-bottom: 40px;
+    <section class="default dark">
+        <div class="section-title">Tituto</div>
+        <div class="section-desc">Descrição titulo</div>
+        <div class="section-body"></div>
+    </section>
     
-}
+   </main>
+   <footer>
 
-.default .section-body{
-    max-width: 1140px;
-    margin: auto;
-}
+   </footer>
+</body>
 
-.default.light{
-    background-color: #f7f7f7;
-}
-
-.default.light .section-title,
-.default.light .section-body{
-    color: black;
-}
-
-.default.dark{
-    background-color: black;
-}
-
-.default.dark .section-title,
-.default.dark .section-body{
-    color: white;
-}
-
-.section-aboutus{
-    display: flex;
-}
-
-.section-aboutus--left{
-    flex: 1;
-}
-
-.section-aboutus--left p{
-    font-size: 14px;
-    text-align: justify;
-}
-
-.section-aboutus--rigth{
-    width: 520px;
-    text-align: center;
-}
-
-.section-aboutus--rigth img{
-    width: 480px;
-    box-shadow: 0px 5px 10px #333;
-}
+</html>

@@ -884,10 +884,16 @@ header {
 }
 
 .footer-area3 {
+    background-color: #ccc;
+    color: #999;
+    text-align: center;
     flex: 1;
-    background-color: aqua;
     width: 300px;
     height: 300px;
+}
+
+.footer-borda {
+    border-bottom: 2px solid red;
 }
 
 @media (min-width:450px) and (max-width:800px) {
